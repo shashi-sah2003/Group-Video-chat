@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "agora-rtm": "^2.1.7"
+  }
+}

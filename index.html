@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Group Video Chat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+    <!--Button to join the stream-->
+    <button id="join-btn">Join Stream</button>
+
+    <!--Video stream wrapper-->
+    <div id="stream-wrapper">
+        
+        <!--Container for video streams-->
+        <div id="video-streams"></div>
+
+        <div id="stream-controls">
+            <!--Controls for stream(leave, mic, camera)-->
+            <button id="leave-btn">Leave Stream</button>
+            <button id="mic-btn">Mic On</button>
+            <button id="camera-btn">Camera on</button>
+
+            <div id="message-box">
+                <div id="messages"></div>
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+<!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
+<script src="AgoraRTC_N-4.20.0.js"></script>
+<script src="agora-rtm-2.1.7.min.js"></script>
+<script src='main.js'></script>
+</html>
